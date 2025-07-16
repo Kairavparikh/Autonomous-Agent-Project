@@ -1,106 +1,59 @@
-# Raylib-Quickstart
-A simple cross platform template for setting up a project with the bleeding edge raylib code.
-Works with C or C++.
+# Autonomous Agent Project
 
-## Supported Platforms
-Quickstart supports the main 3 desktop platforms
-* Windows
-* Linux
-* MacOS
+![Autonomous Agent](./resources/your-image.png)
 
-# VSCode Users (all platforms)
-* Download the quickstart
-* Rename the folder to your game name
-* Open the folder in VSCode.
-* Press F5 to build
-* You are good to go.
+## Overview
 
-# Windows Users
-There are two compiler toolchains avialble for windows, MinGW-W64 (a free compiler using GCC), and Microsoft Visual Studio
-## Using MinGW-W64
-* Double click the build-MinGW-W64.bat file.
-* cd into the folder in your terminal
-* run make
-* You are good to go
+This project simulates autonomous buses navigating a 2D environment to collect fuel targets. Each bus moves towards fuel pickups to avoid running out of fuel, and when fuel is depleted, buses enter a wandering state until they refuel. The simulation is built using [Raylib](https://www.raylib.com/) for rendering and input handling.
 
-### Note on MinGW-64 versions
-Make sure you have a modern version of MinGW-W64 (not mingw).
-The best place to get it is from the W64devkit from
-https://github.com/skeeto/w64devkit/releases
-or the version installed with the raylib installer
-#### If you have installed rayib from the installer
-Make sure you have added the path
+## Features
 
- C:\raylib\w64devkit\bin 
+- Multiple autonomous bus agents with fuel management.
+- Intelligent targeting system for fuel pickups.
+- Wandering behavior when buses run out of fuel.
+- Speed boost power-up mechanic.
+- Scoring system based on pickups collected.
+- Dynamic stage progression with target resets and bus upgrades.
 
-To your path environment varialbe so that the compiler that came with raylib can be found..
+## Controls
 
-DO NOT INSALL ANOTHER MinGW-W64 from another source such as msys2, you don't need it.
+- The simulation runs automatically once started.
+- Observe bus behaviors as they collect fuel and avoid running out.
 
-## Microsoft Visual Studio
-* Run the build-VisualStudio2022.bat
-* double click the .sln file that is geneated.
-* develop your game
-* you are good to go.
+## Dependencies
 
-# Linux Users
-* CD into the build folder
-* run ./premake5 gmake2
-* CD back to the root
-* run make
-* you are good to go
+- C++11 or later compiler.
+- [Raylib](https://www.raylib.com/) — simple and easy-to-use library to enjoy videogames programming.
 
-# MacOS Users
-* CD into the build folder
-* run ./premake5.osx gmake2
-* CD back to the root
-* run make
-* you are good to go
+## How to Install Raylib
+## macOS
+Install Raylib using Homebrew:
+brew install raylib
+Linux (Ubuntu/Debian)
 
-# Output files
-The built code will be in the bin dir
+### Option 1: Install from Package Manager (if available)
+sudo apt-get update
+sudo apt-get install libraylib-dev
 
-# Working directories and the resources folder
-The example uses a utility function from path_utils.h that will find the resources dir and set it as the current working directory. This is very useful when starting out. If you wish to manage your own working directory you can simply remove the call to the function and the header.
+### Option 2: Build from Source
+sudo apt-get update
+sudo apt-get install build-essential git cmake libglfw3-dev libopenal-dev libpthread-stubs0-dev libx11-dev libxcursor-dev libxi-dev libxrandr-dev libxinerama-dev libudev-dev libasound2-dev libpulse-dev
 
-# Changing to C++
-Simply rename src/main.c to src/main.cpp and re-run the steps above and do a clean build.
+git clone https://github.com/raysan5/raylib.git
+cd raylib
+mkdir build && cd build
+cmake ..
+make
+sudo make install
+### On Windows
 
-# Using your own code
-Simply remove src/main.c and replace it with your code, and re-run the steps above and do a clean build.
+1. Download the Raylib installer or precompiled binaries from the [Raylib releases page](https://github.com/raysan5/raylib/releases).
+2. Follow the instructions included for setting up the library with your IDE or build system.
 
-# Building for other OpenGL targets
-If you need to build for a different OpenGL version than the default (OpenGL 3.3) you can specify an openGL version in your premake command line. Just modify the bat file or add the following to your command line
+Alternatively, install via **vcpkg**:
 
-## For OpenGL 1.1
---graphics=opengl11
-
-## For OpenGL 2.1
---graphics=opengl21
-
-## For OpenGL 4.3
---graphics=opengl43
-
-## For OpenGLES 2.0
---graphics=opengles2
-
-## For OpenGLES 3.0
---graphics=opengles3
-
-# License
-Copyright (c) 2020-2024 Jeffery Myers
-
-This software is provided "as-is", without any express or implied warranty. In no event 
-will the authors be held liable for any damages arising from the use of this software.
-
-Permission is granted to anyone to use this software for any purpose, including commercial 
-applications, and to alter it and redistribute it freely, subject to the following restrictions:
-
-  1. The origin of this software must not be misrepresented; you must not claim that you 
-  wrote the original software. If you use this software in a product, an acknowledgment 
-  in the product documentation would be appreciated but is not required.
-
-  2. Altered source versions must be plainly marked as such, and must not be misrepresented
-  as being the original software.
-
-  3. This notice may not be removed or altered from any source distribution.
+```bash
+git clone https://github.com/microsoft/vcpkg.git
+cd vcpkg
+.\bootstrap-vcpkg.bat
+vcpkg install raylib
