@@ -1,0 +1,34 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+../include/resource_dir.h
+raylib.h
+../include/raylib.h
+
+/Users/kairavparikh/Downloads/raylib-quickstart-main-forreal/src/kairavparikh.cpp
+raylib.h
+/Users/kairavparikh/Downloads/raylib-quickstart-main-forreal/src/raylib.h
+vector
+-
+cmath
+-
+cstdlib
+-
+ctime
+-
+resource_dir.h
+-
+algorithm
+-
+
+_deps/raylib-src/src/raylib.h
+stdarg.h
+-
+stdbool.h
+-
+

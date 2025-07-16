@@ -1,0 +1,26 @@
+/Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - Unix Makefiles" /Users/kairavparikh/Downloads/raylib-quickstart-main-forreal
+-- Populating raylib
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /Users/kairavparikh/Downloads/raylib-quickstart-main-forreal/cmake-build-debug/_deps/raylib-subbuild
+[100%] Built target raylib-populate
+-- Testing if -Werror=pointer-arith can be used -- compiles
+-- Testing if -Werror=implicit-function-declaration can be used -- compiles
+-- Testing if -fno-strict-aliasing can be used -- compiles
+-- Using raylib's GLFW
+-- Including Cocoa support
+CMake Warning (dev) at cmake-build-debug/_deps/raylib-src/cmake/LibraryConfigurations.cmake:22 (MESSAGE):
+  OpenGL is deprecated starting with macOS 10.14 (Mojave)!
+Call Stack (most recent call first):
+  cmake-build-debug/_deps/raylib-src/src/CMakeLists.txt:49 (include)
+This warning is for project developers.  Use -Wno-dev to suppress it.
+
+-- Audio Backend: miniaudio
+-- Building raylib static library
+-- Generated build type: Debug
+-- Compiling with the flags:
+--   PLATFORM=PLATFORM_DESKTOP
+--   GRAPHICS=GRAPHICS_API_OPENGL_33
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /Users/kairavparikh/Downloads/raylib-quickstart-main-forreal/cmake-build-debug

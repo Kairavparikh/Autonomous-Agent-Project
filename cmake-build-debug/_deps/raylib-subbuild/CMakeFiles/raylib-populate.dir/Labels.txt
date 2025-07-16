@@ -1,0 +1,14 @@
+# Target labels
+ raylib-populate
+# Source files and their labels
+/Users/kairavparikh/Downloads/raylib-quickstart-main-forreal/cmake-build-debug/_deps/raylib-subbuild/CMakeFiles/raylib-populate
+/Users/kairavparikh/Downloads/raylib-quickstart-main-forreal/cmake-build-debug/_deps/raylib-subbuild/CMakeFiles/raylib-populate.rule
+/Users/kairavparikh/Downloads/raylib-quickstart-main-forreal/cmake-build-debug/_deps/raylib-subbuild/CMakeFiles/raylib-populate-complete.rule
+/Users/kairavparikh/Downloads/raylib-quickstart-main-forreal/cmake-build-debug/_deps/raylib-subbuild/raylib-populate-prefix/src/raylib-populate-stamp/raylib-populate-install.rule
+/Users/kairavparikh/Downloads/raylib-quickstart-main-forreal/cmake-build-debug/_deps/raylib-subbuild/raylib-populate-prefix/src/raylib-populate-stamp/raylib-populate-mkdir.rule
+/Users/kairavparikh/Downloads/raylib-quickstart-main-forreal/cmake-build-debug/_deps/raylib-subbuild/raylib-populate-prefix/src/raylib-populate-stamp/raylib-populate-download.rule
+/Users/kairavparikh/Downloads/raylib-quickstart-main-forreal/cmake-build-debug/_deps/raylib-subbuild/raylib-populate-prefix/src/raylib-populate-stamp/raylib-populate-patch.rule
+/Users/kairavparikh/Downloads/raylib-quickstart-main-forreal/cmake-build-debug/_deps/raylib-subbuild/raylib-populate-prefix/src/raylib-populate-stamp/raylib-populate-configure.rule
+/Users/kairavparikh/Downloads/raylib-quickstart-main-forreal/cmake-build-debug/_deps/raylib-subbuild/raylib-populate-prefix/src/raylib-populate-stamp/raylib-populate-build.rule
+/Users/kairavparikh/Downloads/raylib-quickstart-main-forreal/cmake-build-debug/_deps/raylib-subbuild/raylib-populate-prefix/src/raylib-populate-stamp/raylib-populate-test.rule
+/Users/kairavparikh/Downloads/raylib-quickstart-main-forreal/cmake-build-debug/_deps/raylib-subbuild/raylib-populate-prefix/src/raylib-populate-stamp/raylib-populate-skip-update.rule
